@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pather</title>
+  <link rel="stylesheet" href="popup/popup.css">
+</head>
+<body>
+  <div class="popup">
+    
+    <!-- HEADER -->
+    <header class="header">
+      <div class="brand">
+        <div class="folder-tile">
+          <svg class="folder-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 7V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V9C21 7.89543 20.1046 7 19 7H12L10 5H5C3.89543 5 3 5.89543 3 7Z" fill="#ECA316"/>
+          </svg>
+        </div>
+        <div class="brand-details">
+          <div class="brand-title">
+            <h1>Pather</h1>
+            <span class="version">v2.1</span>
+          </div>
+          <p class="tagline">Capture • Copy • Share</p>
+        </div>
+      </div>
+
+      <div class="header-panel">
+        <div class="header-top">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Active</span>
+          </div>
+          <button class="menu-button" aria-label="More options">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="5" r="2"/>
+              <circle cx="12" cy="12" r="2"/>
+              <circle cx="12" cy="19" r="2"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="provider-wrapper">
+          <button class="provider-selector" id="providerBtn">
+            <svg class="provider-logo" viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg">
+              <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
+              <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.45z" fill="#00ac47"/>
+              <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.5l13.75 23.8z" fill="#ea4335"/>
+              <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.5-1.2h-18.5c-1.6 0-3.15.45-4.5 1.2z" fill="#00832d"/>
+              <path d="m59.8 50h27.5c0-1.55-.4-3.1-1.2-4.5l-25.4-44c-.8-1.4-1.95-2.5-3.3-3.3z" fill="#ffba00"/>
+              <path d="m27.5 50 13.75 23.8c1.35.8 2.9 1.2 4.5 1.2h18.5c1.6 0 3.15-.4 4.5-1.2l-13.75-23.8z" fill="#2684fc"/>
+            </svg>
+            <span>Google Drive</span>
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="content">
+      <div class="section-header">
+        <span class="section-label">CURRENT TARGET</span>
+        <a href="#" class="depth-link">
+          4 levels deep
+          <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="16" x2="12" y2="12"/>
+            <line x1="12" y1="8" x2="12.01" y2="8"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- TARGET CARD -->
+      <div class="target-card">
+        <div class="source-provider">
+          <svg class="provider-logo" viewBox="0 0 87.3 78">
+            <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
+            <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.45z" fill="#00ac47"/>
+            <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.5l13.75 23.8z" fill="#ea4335"/>
+            <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.5-1.2h-18.5c-1.6 0-3.15.45-4.5 1.2z" fill="#00832d"/>
+            <path d="m59.8 50h27.5c0-1.55-.4-3.1-1.2-4.5l-25.4-44c-.8-1.4-1.95-2.5-3.3-3.3z" fill="#ffba00"/>
+            <path d="m27.5 50 13.75 23.8c1.35.8 2.9 1.2 4.5 1.2h18.5c1.6 0 3.15-.4 4.5-1.2l-13.75-23.8z" fill="#2684fc"/>
+          </svg>
+          <span>Google Drive</span>
+        </div>
+
+        <div class="breadcrumb">
+          <span>My Drive</span>
+          <span class="sep">&rsaquo;</span>
+          <span>Projects</span>
+          <span class="sep">&rsaquo;</span>
+          <span>2026</span>
+          <span class="sep">&rsaquo;</span>
+        </div>
+
+        <h2 class="file-name">Architecture_System_Design_v4.pdf</h2>
+      </div>
+
+      <!-- SYNC STATUS -->
+      <div class="sync-status">
+        <svg class="sync-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M23 4v6h-6"/>
+          <path d="M1 20v-6h6"/>
+          <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+        </svg>
+        <span>Last synced 8s ago</span>
+      </div>
+
+      <!-- ACTIONS -->
+      <div class="action-group">
+        <button class="btn btn-primary" id="copyPathBtn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+          Copy Path
+        </button>
+
+        <button class="btn btn-secondary" id="copyLinkBtn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+          </svg>
+          Copy Share Link
+        </button>
+      </div>
+    </main>
+
+    <!-- SETTINGS (TOGGLE SWITCH REPLACED RADIO BUTTONS) -->
+    <footer class="settings">
+      <div class="settings-divider"></div>
+
+      <div class="setting-row">
+        <div class="setting-left">
+          <div class="setting-icon-box">
+            <svg class="setting-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <div class="setting-content">
+            <h3>Markdown Formatting</h3>
+            <p>Generate [file](link) syntax</p>
+          </div>
+        </div>
+
+        <!-- TOGGLE SWITCH -->
+        <div class="toggle-wrapper">
+          <label class="switch">
+            <input type="checkbox" id="markdownToggle">
+            <span class="slider"></span>
+          </label>
+          <span class="toggle-status" id="toggleStatusLabel">OFF</span>
+        </div>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-left">
+          <div class="setting-icon-box">
+            <svg class="setting-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="6" width="20" height="12" rx="3"/>
+              <circle cx="8" cy="12" r="1" fill="currentColor"/>
+              <circle cx="12" cy="12" r="1" fill="currentColor"/>
+              <circle cx="16" cy="12" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="setting-content">
+            <h3>Quick Copy</h3>
+            <p>Ctrl + Shift + C</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="popup/popup.js"></script>
+</body>
+</html>

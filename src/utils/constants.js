@@ -1,0 +1,2 @@
+export const ACTIONS={GET_DATA:'GET_DATA',EXECUTE_COPY_PATH:'EXECUTE_COPY_PATH'};
+export const STORAGE_KEYS={USE_MARKDOWN:'useMarkdown'};
